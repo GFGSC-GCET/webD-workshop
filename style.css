@@ -153,3 +153,94 @@ header .container {
   left: -15px;
   opacity: 0.1;
 }
+
+.mainSignIn{
+  background-color: #f1f8fc;
+  position: relative;
+  padding: 1.7rem 0 2rem;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header .btn .backtohomepage{
+  margin-left: 5px;
+  border: none;
+  font-family: "poppins", sans-serif;
+  background-color: #f1f8fc;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.backtohomepage:hover{
+  color: #5bacdf;
+}
+
+.form{
+  display: grid;
+  margin-top: 80px;
+  grid-template-columns: repeat(2, 10fr);
+}
+
+.loginImage img{
+  width: 70%;
+  height: 70%;
+  margin-left: 25%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px;
+}
+
+.h1 {
+  color: #312f3a; 
+  margin-left: 180px;
+}
+
+.H5{
+  color: #312f3a;
+  margin-left: 130px;
+}
+
+.subform{
+  position: relative;
+  font-size: large;
+  margin-left: 35px;
+}
+
+input[type="text"]{
+  padding: 6px;
+  border-radius: 50px;
+  width: 60%;
+  height: 40px;
+}
+
+input[type="password"]{
+  padding: 6px;
+  border-radius: 50px;
+  width: 60%;
+  height: 40px;
+}
+
+input[type="submit"]{
+  margin-left: 140px;
+  padding: 6px;
+  border-radius: 10px;
+  width: 20%;
+  height: 40px;
+  cursor: pointer;
+  color: #fff !important;
+  background-color: #64bcf4;
+  font-size: large;
+  border: none;
+}
+
+input[type="submit"]:hover{
+  background-color: #3abff9;
+  transform: scale(1.15) !important;
+}
+
+.subform .displaypwd{
+  font-size: 15px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <div class="mainSignIn">
+            <header>
+                <div class="btn">
+                    <button class="backtohomepage" onclick="BacktoHomePage()"> < Back to home page</button>
+                </div>
+            </header>
+
+            <div class="form">
+                <div class="loginImage">
+                    <img src="./img/login.jpg" alt="login" />
+                </div>
+
+                <div>
+                    <h1 class="h1">SIGN IN!</h1>
+                    <H5 class="H5">We are pleased to have you back.</H5><br>
+                <form class="subform">
+                    <label for="username">Username : </label><br>
+                    <input type="text" name="username" id="username" placeholder="username"><br>
+                    <label for="password">Password : </label><br>
+                    <input type="password" placeholder="password" id="password"><br><br>
+                    <input type="checkbox" onclick="ShowPWD()">
+                    <label for="showpwd" class="displaypwd">Show password</label><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <script>
+            function BacktoHomePage(){
+                window.open("index.html","_self");
+            }
+
+            function ShowPWD(){
+                var x = document.getElementById("password");
+                if(x.type == "password"){
+                    x.type = "text";
+                }
+                else{
+                    x.type = "password";
+                }
+            }
+        </script>
+    </main>    
+</body>
+
+</html>
